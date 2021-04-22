@@ -1,0 +1,310 @@
+@import
+    'https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap';
+    'https://fonts.googleapis.com/css?family=Lato:400,700';
+    
+
+
+body {
+    background-color: white;
+    font-family: 'Abhaya Libre', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    color: #D32F2F;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: red;
+    transition: background-color 2.5s;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 80px auto;
+}
+
+#car > h2 {
+    margin-top: 50px auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 2px black groove;
+    border-radius: 20px;
+    background: transparent;
+    background-color: #D32F2F;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 100px auto;
+}
+
+#car > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+    font-size: 4rem;
+}
+
+#car input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  #car {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+    
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .description {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+    margin: 20px auto;
+}
+
+#features h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  #features .description {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#review {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#review > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 80px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.flex-container > .level {
+  background-color: #ddd;
+  font-size: 32px;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+
+.flex-container > h2 {
+  margin-top: 15px;
+    font-family: 'Lato';
+}
+
+.flex-container > ol {
+  margin: 15px 0;
+}
+
+.flex-container > ol > li {
+  padding: 5px 0;
+}
+
+.flex-container > button {
+  border: 0;
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: lightgray;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .flex-container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
